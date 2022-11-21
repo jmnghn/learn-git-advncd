@@ -27,5 +27,7 @@ git restore --staged (파일명)
 ### 파일을 특정 커밋의 상태로 되돌리기
 
 ```
-git restore --source=(헤드 또는 커밋 해시) 파일명)
+git restore --source=(헤드 또는 커밋 해시) (파일명)
 ```
+
+> Git에서는 `--source`에 지정한 상태로 상태로 되돌린 후 commit하지 않고, 변경된 걸(`modified`)로 인식한다.<br />
