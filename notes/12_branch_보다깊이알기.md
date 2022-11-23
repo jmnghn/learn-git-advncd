@@ -1,6 +1,6 @@
 ## fast-forward vs. 3-way merge
 
-Git에서 `merge`가 이뤄지는 두 방식.<br />
+> Git에서 `merge`가 이뤄지는 두 방식.<br />
 
 ```
 git merge --no-ff (병합할 브랜치명)
@@ -20,7 +20,7 @@ git cherry-pick (체리의 해시)
 
 ## 다른 브랜치에서 파생된 브랜치 옮겨붙이기
 
-`rebase --noto` 옵션 사용<br />
+`rebase --onto` 옵션 사용<br />
 
 <br />
 
@@ -28,7 +28,8 @@ git cherry-pick (체리의 해시)
 git rebase --onto (도착 브랜치) (출발 브랜치) (이동할 브랜치)
 ```
 
-> ex. `git rebase --onto main fruit citrus`<br /> > `citrus`로 fast-forward
+> ex. `git rebase --onto main fruit citrus`<br />
+> `citrus`로 fast-forward
 
 <br />
 
